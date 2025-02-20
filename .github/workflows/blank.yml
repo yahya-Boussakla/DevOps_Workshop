@@ -1,11 +1,10 @@
 name: Run Laravel Tests
 
-on: push  # Runs when code is pushed
+on: push
 
 jobs:
   laravel-tests:
-    runs-on: windows-latest  # Change to Windows runner
-
+    runs-on: ubuntu-latest
     services:
       mysql:
         image: mysql:8
